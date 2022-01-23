@@ -1,0 +1,15 @@
+ 
+     <div id="product-list"  class="product-list" >
+        <h3>We have a variety of Original Sneakers just for you</h3>
+        <div class="product-item-container" #plist >
+            <div class="product-item" 
+            *ngFor = "let product of products; let id = index" >
+              <a 
+              style="cursor:pointer"
+              [routerLink]="['/product',id]">
+               <img [src]="product.imagePath" class="image" alt=""></a>
+              <p class="name">{{product.productName}}</p>
+              <p class="amount">Kshs {{product.price}}</p> 
+            </div>
+        </div>
+       </div>

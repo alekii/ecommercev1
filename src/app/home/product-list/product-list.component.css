@@ -1,0 +1,52 @@
+
+.product-list{
+    width:80%;
+    margin:100px auto;
+    text-align: center;
+}
+.product-list h3{
+    width:50%;
+    margin:0 25%;
+    color:#331a00;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.product-item-container{
+    margin-top: 100px;
+    width: 100%;
+    
+    display: flex;
+}
+.product-item{
+    width:33.33%;
+    margin:auto; 
+    flex-direction: column; 
+}
+
+.product-item .image {
+    width: 80%; 
+    margin:0 10%; 
+    cursor: pointer;
+}
+.name, .amount { 
+    margin:20px 10%; 
+    text-align: center;
+
+}
+.name{
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px){
+    .product-list{
+        width:100%;
+    }
+    .product-item-container{
+        margin-top: 100px; 
+        display: block;
+    }
+    .product-item{
+        width:80%;
+        margin-top:50px;   
+    }
+
+}
